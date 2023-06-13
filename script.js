@@ -5,15 +5,15 @@ const menuItems = document.querySelectorAll('.menuItem');
 const products = [
   {
     id: 1,
-    title: 'Air Force',
-    price: 119,
+    title: 'Off White',
+    price: 2999,
     colors: [
       {
-        code: 'black',
+        code: 'darkblue',
         img: './img/air.png',
       },
       {
-        code: 'darkblue',
+        code: 'black',
         img: './img/air2.png',
       },
     ],
@@ -24,7 +24,7 @@ const products = [
     price: 149,
     colors: [
       {
-        code: 'lightgray',
+        code: 'yellow',
         img: './img/jordan.png',
       },
       {
@@ -39,7 +39,7 @@ const products = [
     price: 109,
     colors: [
       {
-        code: 'lightgray',
+        code: 'white',
         img: './img/blazer.png',
       },
       {
@@ -69,7 +69,7 @@ const products = [
     price: 99,
     colors: [
       {
-        code: 'gray',
+        code: 'white',
         img: './img/hippie.png',
       },
       {
@@ -84,12 +84,12 @@ const products = [
     price: 99,
     colors: [
       {
-        code: 'gray',
+        code: 'red',
         img: './img/zoom.png',
       },
       {
-        code: 'black',
-        img: './img/hippie2.png',
+        code: 'white',
+        img: './img/zoom2.png',
       },
     ],
   },
