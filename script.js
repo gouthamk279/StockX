@@ -9,19 +9,19 @@ const products = [
     price: 2999,
     colors: [
       {
-        code: 'darkblue',
+        code: 'blue',
         img: './img/air.png',
       },
       {
-        code: 'black',
-        img: './img/air2.png',
+        code: 'offwhite',
+        img: './img/air2.png', 
       },
     ],
   },
   {
     id: 2,
     title: 'Air Jordan',
-    price: 149,
+    price: 2500,
     colors: [
       {
         code: 'yellow',
@@ -36,7 +36,7 @@ const products = [
   {
     id: 3,
     title: 'Blazer',
-    price: 109,
+    price: 2799,
     colors: [
       {
         code: 'white',
@@ -51,7 +51,7 @@ const products = [
   {
     id: 4,
     title: 'Crater',
-    price: 129,
+    price: 2699,
     colors: [
       {
         code: 'black',
@@ -66,7 +66,7 @@ const products = [
   {
     id: 5,
     title: 'Uptempo',
-    price: 99,
+    price: 2499,
     colors: [
       {
         code: 'white',
@@ -81,7 +81,7 @@ const products = [
   {
     id: 6,
     title: 'Zoom',
-    price: 99,
+    price: 2899,
     colors: [
       {
         code: 'red',
@@ -113,7 +113,7 @@ menuItems.forEach((item, index) => {
 
     //changes the texts of current product
     currentProductTitle.textContent = chosenProduct.title.toUpperCase();
-    currentProductPrice.textContent = '$' + chosenProduct.price;
+    currentProductPrice.textContent = chosenProduct.price;
     currentProductImg.src = chosenProduct.colors[0].img;
 
     //changes the style of product by selected color

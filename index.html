@@ -22,12 +22,12 @@
             </div>
             <div class="navItem">
                 <div class="search">
-                    <input type="text" class="searchInput" placeholder="I am looking for a...">
+                    <input type="text" class="searchInput" placeholder="I am looking for a..." autoComplete='none' readonly onfocus="this.removeAttribute('readonly');"/>
                     <img src="./img/search.png" width="20px" height="20px" alt="magnifying glass" class="searchIcon">
                 </div>
             </div>
             <div class="navItem">
-                <span class="login">Login</span>
+                <span class="login" onclick=window.location="./login.php">Login</span>
             </div>
         </div>
         <div class="navBottom">
@@ -122,7 +122,7 @@
         <img src="./img/air.png" alt="" class="productImage">
         <div class="productDetails">
             <h1 class="productTitle">OFF WHITE </h1>
-            <h2 class="productPrice">2999</h2>
+            <h2 class="productPrice">₹2999</h2>
             <p class="productDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum
                 aperiam
                 quasi, harum recusandae debitis!</p>
