@@ -113,7 +113,7 @@ menuItems.forEach((item, index) => {
 
     //changes the texts of current product
     currentProductTitle.textContent = chosenProduct.title.toUpperCase();
-    currentProductPrice.textContent = chosenProduct.price;
+    currentProductPrice.textContent = "₹" + chosenProduct.price;
     currentProductImg.src = chosenProduct.colors[0].img;
 
     //changes the style of product by selected color

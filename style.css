@@ -80,7 +80,7 @@ nav {
 /* SLIDER */
 
 .slider {
-  background-image: url('./img/sliderBackground.jpg');
+  background-image: url('./img/mbackground.GIF');
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   background-size: 100vw;
   overflow: hidden;
@@ -225,7 +225,7 @@ nav {
 
 .product {
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
