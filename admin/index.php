@@ -26,7 +26,7 @@
                     <h4 style="color:white;">Total Users</h4>
                     <h5 style="color:white;">
                     <?php
-                        $sql="SELECT * from users where isAdmin=0";
+                        $sql="SELECT * from users";
                         $result=$conn-> query($sql);
                         $count=0;
                         if ($result-> num_rows > 0){
@@ -37,27 +37,6 @@
                         }
                         echo $count;
                     ?></h5>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card">
-                    <i class="fa fa-th-large mb-2" style="font-size: 70px;"></i>
-                    <h4 style="color:white;">Total Categories</h4>
-                    <h5 style="color:white;">
-                    <?php
-                       
-                       $sql="SELECT * from category";
-                       $result=$conn-> query($sql);
-                       $count=0;
-                       if ($result-> num_rows > 0){
-                           while ($row=$result-> fetch_assoc()) {
-                   
-                               $count=$count+1;
-                           }
-                       }
-                       echo $count;
-                   ?>
-                   </h5>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -91,7 +70,7 @@
                        $sql="SELECT * from orders";
                        $result=$conn-> query($sql);
                        $count=0;
-                       if ($result-> num_rows > 0){
+                       if ($result !== false && $result->num_rows > 0){
                            while ($row=$result-> fetch_assoc()) {
                    
                                $count=$count+1;

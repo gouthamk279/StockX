@@ -30,7 +30,6 @@ if (isset($_POST["email"]) && isset($_POST["pswd"])) {
     $email = $_POST["email"];
     $password = $_POST["pswd"];
     $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
-    echo $sql;
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         session_start();
