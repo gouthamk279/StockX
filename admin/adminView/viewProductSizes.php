@@ -16,7 +16,7 @@
       $sql="SELECT * from product_size_variation v, product p, sizes s WHERE p.product_id=v.product_id AND v.size_id=s.size_id ";
       $result=$conn-> query($sql);
       $count=1;
-      if ($result-> num_rows > 0){
+      if ($result !== false && $result->num_rows > 0){
         while ($row=$result-> fetch_assoc()) {
     ?>
     <tr>

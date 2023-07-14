@@ -5,10 +5,10 @@ if(isset($_POST['user_email'])){
  $checkdata=" SELECT email FROM users WHERE email='$emailId' ";
  $result = $conn->query($checkdata);
  if($result->num_rows > 0){
-  echo "Email Already Exist";
+  echo "Email already exists!";
  }
  else{
-  echo "OK";
+  echo "Email is available!";
  }
  exit();
 }

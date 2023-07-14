@@ -5,9 +5,8 @@
     {
        
         $ProductName = $_POST['p_name'];
-        $desc= $_POST['p_desc'];
+        $quantity= $_POST['p_desc'];
         $price = $_POST['p_price'];
-        $category = $_POST['category'];
        
             
         $name = $_FILES['file']['name'];
@@ -22,7 +21,7 @@
         move_uploaded_file($temp,$finalImage);
 
          $insert = mysqli_query($conn,"INSERT INTO product
-         (product_name,product_image,price,product_desc,category_id) 
+         (product_name,product_image,price,quantity) 
          VALUES ('$ProductName','$image',$price,'$desc','$category')");
  
          if(!$insert)

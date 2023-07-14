@@ -27,29 +27,29 @@
       <label for="price">Unit Price:</label>
       <input type="number" class="form-control" id="p_price" value="<?=$row1['price']?>">
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label>Category:</label>
       <select id="category">
         <?php
-          $sql="SELECT * from category WHERE category_id='$catID'";
-          $result = $conn-> query($sql);
-          if ($result-> num_rows > 0){
-            while($row = $result-> fetch_assoc()){
-              echo"<option value='". $row['category_id'] ."'>" .$row['category_name'] ."</option>";
-            }
-          }
-        ?>
-        <?php
-          $sql="SELECT * from category WHERE category_id!='$catID'";
-          $result = $conn-> query($sql);
-          if ($result-> num_rows > 0){
-            while($row = $result-> fetch_assoc()){
-              echo"<option value='". $row['category_id'] ."'>" .$row['category_name'] ."</option>";
-            }
-          }
+        //   $sql="SELECT * from category WHERE category_id='$catID'";
+        //   $result = $conn-> query($sql);
+        //   if ($result-> num_rows > 0){
+        //     while($row = $result-> fetch_assoc()){
+        //       echo"<option value='". $row['category_id'] ."'>" .$row['category_name'] ."</option>";
+        //     }
+        //   }
+        // ?>
+        // <?php
+        //   $sql="SELECT * from category WHERE category_id!='$catID'";
+        //   $result = $conn-> query($sql);
+        //   if ($result-> num_rows > 0){
+        //     while($row = $result-> fetch_assoc()){
+        //       echo"<option value='". $row['category_id'] ."'>" .$row['category_name'] ."</option>";
+        //     }
+        //   }
         ?>
       </select>
-    </div>
+    </div> -->
       <div class="form-group">
          <img width='200px' height='150px' src='<?=$row1["product_image"]?>'>
          <div>

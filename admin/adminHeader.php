@@ -1,5 +1,5 @@
 <?php
-   session_start();
+//    session_start();
    include_once "./config/dbconnect.php";
 
 ?>
@@ -22,7 +22,7 @@
           <?php
         } else {
             ?>
-            <a href="" style="text-decoration:none;">
+            <a href="./logout.php" style="text-decoration:none;">
                     <i class="fa fa-sign-in mr-5" style="font-size:30px; color:#fff;" aria-hidden="true"></i>
             </a>
 

@@ -67,23 +67,23 @@
               <label for="qty">Description:</label>
               <input type="text" class="form-control" id="p_desc" required>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label>Category:</label>
               <select id="category" >
                 <option disabled selected>Select category</option>
                 <?php
 
-                  $sql="SELECT * from category";
-                  $result = $conn-> query($sql);
+                  // $sql="SELECT * from category";
+                  // $result = $conn-> query($sql);
 
-                  if ($result-> num_rows > 0){
-                    while($row = $result-> fetch_assoc()){
-                      echo"<option value='".$row['category_id']."'>".$row['category_name'] ."</option>";
-                    }
-                  }
+                  // if ($result-> num_rows > 0){
+                  //   while($row = $result-> fetch_assoc()){
+                  //     echo"<option value='".$row['category_id']."'>".$row['category_name'] ."</option>";
+                  //   }
+                  // }
                 ?>
               </select>
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="file">Choose Image:</label>
                 <input type="file" class="form-control-file" id="file">

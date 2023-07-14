@@ -12,6 +12,7 @@
 <body >
     
         <?php
+            include "../logincheck.php";
             include "./adminHeader.php";
             include "./sidebar.php";
            
