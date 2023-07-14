@@ -54,7 +54,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Welcome, Admin</h2>
+    <?php include 'logincheck.php'; echo "<h2>Welcome, ".$_SESSION['name']."</h2>";?>
         <a href="logout.php" class="logout-btn">Logout</a>
         <div class="product-list">
             <div class="product-item">
@@ -74,4 +74,3 @@
     </div>
 </body>
 </html>
-<?php include 'logincheck.php'; ?>

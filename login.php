@@ -28,9 +28,11 @@ if (isset($_POST["email"]) && isset($_POST["pswd"])) {
     $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
+        $row = mysqli_fetch_assoc($result);
         session_start();
         $_SESSION['email'] = $email;
-        header("Location: dashboard.php");
+        $_SESSION['name'] = $row['Name'];
+        header("Location: products.php");
         include 'logincheck.php';
     } else {
         header("Location: login.php?error=1");
@@ -41,7 +43,7 @@ if(isset($_GET['error']))
     echo "<center><span style='color: white;'>Invalid Email or Password</span></center>";
 }
 if (isset($_SESSION['email'])) {
-    header('Location: dashboard.php');
+    header('Location: products.php');
     exit();
 }
 
